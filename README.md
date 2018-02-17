@@ -18,9 +18,9 @@
 
 #### 响应构建工具
 
-类名: BulidResponseTools
+**类名:** BulidResponseTools
 
-方法:
+**方法:**
 
 > Success()
 
@@ -54,6 +54,44 @@
 
 构建带文本和数据的失败响应
 
+**使用方法**
+
+
+
 #### 安全工具
 
-类名: SecurityTools
+**类名:** SecurityTools
+
+**方法:**
+
+> Base64Encode(String Message)
+
+Base64编码
+
+> Base64Decode(String Message)
+
+Base64解码
+
+> MD5Encode(String Message)
+
+MD5加密
+
+> SHAEncode(String Message)
+
+SHA加密
+
+> KeyGenerator(String Type, int Long)
+
+密钥生成器
+
+> SymmetricEncode(String Type, String Message, String Key)
+
+对称算法加密
+
+> SymmetricDecode(String Type, String Message, String Key)
+
+对称算法解密
+
+**使用方法**
+
+
