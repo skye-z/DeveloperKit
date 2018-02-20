@@ -59,16 +59,4 @@ public class BulidSqlParameter {
         return Screen.toString().substring(0, Screen.length() - 4).trim();
     }
 
-    public static void main(String[] args) {
-        Map<String, String> Parameters = new HashMap<>();
-        Parameters.put("Name", "Name");
-        Parameters.put("PassWord", "PassWord");
-        Parameters.put("Id", "Id");
-        List<String> Connect = new ArrayList<>();
-        Connect.add("AND");
-        Connect.add("OR");
-        Connect.add("OR");
-        System.out.println(Bulid(Parameters, Connect));
-    }
-
 }
