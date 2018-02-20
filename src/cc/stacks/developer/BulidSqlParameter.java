@@ -5,11 +5,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-// SQL参数构建工具
+/**
+ * SQL参数构建工具
+ *
+ * @author sKai-Zhang <skai-zhang@hotmail.com>
+ * @copyright CopyRight 2015-2018 sKai-Zhang All Rights Reserved.
+ * @license ZPL
+ */
 public class BulidSqlParameter {
 
     // And连接符
-    public static List<String> AndConnect(){
+    public static List<String> AndConnect() {
         // 创建连接符集合
         List<String> Connect = new ArrayList<>();
         // 插入And
@@ -19,7 +25,7 @@ public class BulidSqlParameter {
     }
 
     // Or连接符
-    public static List<String> OrConnect(){
+    public static List<String> OrConnect() {
         // 创建连接符集合
         List<String> Connect = new ArrayList<>();
         // 插入And
@@ -37,7 +43,7 @@ public class BulidSqlParameter {
         // 遍历参数
         for (Map.Entry<String, String> Parameter : Parameters.entrySet()) {
             // 判断连接符数量
-            if (Connect.size()==1)
+            if (Connect.size() == 1)
                 // 构建SQL参数
                 Screen.append("'").append(Parameter.getKey()).append("'='").append(Parameter.getValue()).append("' ").append(Connect.get(0));
             else if (Connect.size() == Parameters.size())
@@ -50,19 +56,19 @@ public class BulidSqlParameter {
             ConnectSize++;
         }
         // 返回SQL参数
-        return Screen.toString().substring(0,Screen.length()-3).trim();
+        return Screen.toString().substring(0, Screen.length() - 3).trim();
     }
 
     public static void main(String[] args) {
         Map<String, String> Parameters = new HashMap<>();
-        Parameters.put("Name","Name");
-        Parameters.put("PassWord","PassWord");
-        Parameters.put("Id","Id");
+        Parameters.put("Name", "Name");
+        Parameters.put("PassWord", "PassWord");
+        Parameters.put("Id", "Id");
         List<String> Connect = new ArrayList<>();
         Connect.add("AND");
         Connect.add("OR");
         Connect.add("AND");
-        System.out.println(Bulid(Parameters,Connect));
+        System.out.println(Bulid(Parameters, Connect));
     }
 
 }

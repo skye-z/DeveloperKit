@@ -11,7 +11,13 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.util.Base64;
 
-// 安全工具
+/**
+ * 安全工具
+ *
+ * @author sKai-Zhang <skai-zhang@hotmail.com>
+ * @copyright CopyRight 2015-2018 sKai-Zhang All Rights Reserved.
+ * @license ZPL
+ */
 @SuppressWarnings("all")
 public class Security {
 
@@ -102,7 +108,6 @@ public class Security {
             return null;
         }
     }
-
 
 
     public static void main(String[] args) {

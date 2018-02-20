@@ -2,7 +2,13 @@ package cc.stacks.developer;
 
 import java.io.Serializable;
 
-// 响应构建工具
+/**
+ * 响应构建工具
+ *
+ * @author sKai-Zhang <skai-zhang@hotmail.com>
+ * @copyright CopyRight 2015-2018 sKai-Zhang All Rights Reserved.
+ * @license ZPL
+ */
 @SuppressWarnings("all")
 public class BulidResponse<T> implements Serializable {
 
