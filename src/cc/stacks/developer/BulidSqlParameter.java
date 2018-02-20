@@ -45,10 +45,10 @@ public class BulidSqlParameter {
             // 判断连接符数量
             if (Connect.size() == 1)
                 // 构建SQL参数
-                Screen.append("'").append(Parameter.getKey()).append("'='").append(Parameter.getValue()).append("' ").append(Connect.get(0));
+                Screen.append("'").append(Parameter.getKey()).append("'='").append(Parameter.getValue()).append("' ").append(Connect.get(0)).append(" ");
             else if (Connect.size() == Parameters.size())
                 // 构建SQL参数
-                Screen.append("'").append(Parameter.getKey()).append("'='").append(Parameter.getValue()).append("' ").append(Connect.get(ConnectSize));
+                Screen.append("'").append(Parameter.getKey()).append("'='").append(Parameter.getValue()).append("' ").append(Connect.get(ConnectSize)).append(" ");
             else
                 // 构建SQL参数
                 Screen.reverse();
