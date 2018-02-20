@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DeveloperKit:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DeveloperKit_jar</output-path>
+    <root id="archive" name="DeveloperKit.jar">
+      <element id="module-output" name="DeveloperKit" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/cc/stacks/developer/Package/commons-codec-1.11.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -13,7 +13,7 @@ import java.util.Base64;
 
 // 安全工具
 @SuppressWarnings("all")
-public class SecurityTools {
+public class Security {
 
     // Base64 编码
     public static String Base64Encode(String Message) {
@@ -134,10 +134,10 @@ public class SecurityTools {
 
         StartTime = System.currentTimeMillis();
         String AESKey = KeyGenerator("AES", 128);
-        String AESTest = SymmetricEncode("AES", "这是一段这是一段测试内容测试内容", "1907d214dbdb33abf4d027dd1ce3342b");
+        String AESTest = SymmetricEncode("AES", "这是一段这是一段测试内容测试内容", AESKey);
         System.out.println("AES密钥: " + AESKey);
         System.out.println("AES加密: " + AESTest);
-        System.out.println("AES解密: " + SymmetricDecode("AES", AESTest, "1907d214dbdb33abf4d027dd1ce3342b"));
+        System.out.println("AES解密: " + SymmetricDecode("AES", AESTest, AESKey));
         EndTime = System.currentTimeMillis();
         System.out.println("AES耗时: " + (EndTime - StartTime) + "毫秒" + "\n");
 
