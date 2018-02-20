@@ -156,12 +156,8 @@ Base64和MD5编码我就不细讲了, 只需要传入需要编码的数据即可
 
 ---
 
-### 授权声明
+### 授权许可
 
-请认真阅读本项目开源协议, 本项目使用**青岛易软天创网络科技有限公司**起草的ZPL协议
+[中文授权许可](https://github.com/skai-zhang/DeveloperKit/raw/master/license/Chinese.txt)
 
-ZPL协议是我发现最适合国内的开源授权协议.
-
-[中文授权许可]()
-
-[English License]()
+[English License](https://github.com/skai-zhang/DeveloperKit/raw/master/license/English.txt)
