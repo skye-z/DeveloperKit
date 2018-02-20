@@ -158,6 +158,8 @@ Base64和MD5编码我就不细讲了, 只需要传入需要编码的数据即可
 
 ### 授权许可
 
+请注意, 由于本项目内含Apache基金会下的Commons项目, 本项目打包后META-INF目录下的许可文件为Commons项目附带与本项目无关
+
 [中文授权许可](https://github.com/skai-zhang/DeveloperKit/raw/master/license/Chinese.txt)
 
 [English License](https://github.com/skai-zhang/DeveloperKit/raw/master/license/English.txt)
