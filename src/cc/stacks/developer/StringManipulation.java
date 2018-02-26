@@ -12,7 +12,7 @@ import java.util.Random;
 @SuppressWarnings("all")
 public class StringManipulation {
 
-    private static String RandomBulid(int StringLength) {
+    public static String RandomBulid(int StringLength) {
         // 创建字符串构建对象
         StringBuffer Bulid = new StringBuffer();
         // 创建字符串种子
