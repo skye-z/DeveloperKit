@@ -92,4 +92,35 @@ public class BulidResponse<T> implements Serializable {
         return new BulidResponse<T>(false, Message, Data);
     }
 
+    public boolean isState() {
+        return State;
+    }
+
+    public void setState(boolean state) {
+        State = state;
+    }
+
+    public String getMessage() {
+        return Message;
+    }
+
+    public void setMessage(String message) {
+        Message = message;
+    }
+
+    public T getData() {
+        return Data;
+    }
+
+    public void setData(T data) {
+        Data = data;
+    }
+
+    public String getTime() {
+        return Time;
+    }
+
+    public void setTime(String time) {
+        Time = time;
+    }
 }
