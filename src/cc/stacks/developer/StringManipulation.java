@@ -1,7 +1,5 @@
 package cc.stacks.developer;
 
-import java.util.Random;
-
 /**
  * 字符串处理工具
  *
