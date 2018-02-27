@@ -24,6 +24,8 @@ public class Token {
     // 签发单位
     private Issuer Issuer;
 
+    public Token(){}
+
     public Token(Map<String, String> Account, String Ip, String Name, int Term) {
         this.Account = Account;
         this.Ip = Ip;
