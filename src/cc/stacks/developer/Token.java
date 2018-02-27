@@ -30,6 +30,30 @@ public class Token {
         this.Issuer = new Issuer(Name, Term);
     }
 
+    public Map<String, String> getAccount() {
+        return Account;
+    }
+
+    public void setAccount(Map<String, String> account) {
+        Account = account;
+    }
+
+    public String getIp() {
+        return Ip;
+    }
+
+    public void setIp(String ip) {
+        Ip = ip;
+    }
+
+    public cc.stacks.developer.Issuer getIssuer() {
+        return Issuer;
+    }
+
+    public void setIssuer(cc.stacks.developer.Issuer issuer) {
+        Issuer = issuer;
+    }
+
     // 构建
     public String Bulid(String Key) {
         try {
